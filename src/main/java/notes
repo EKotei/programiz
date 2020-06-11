@@ -1,0 +1,99 @@
+// Recursion*
+-recursion is a method that calls itself. recurse()
+
+// Nested classes*
+-Classes can be defined within other classes.
+-An inner class is treated just like a method and variable inside a class.
+-Static nested classes re associated with the outer class.  To access the static nested class, we don't need objects of the outer class.
+
+// Singleton*
+-Type of design pattern.
+-Ensures that only one instance of the class is created.
+
+//enums*
+-ordinal- returns the position of an enum constant.
+/*EX: ordinal(MEDIUM)
+*/returns 2
+-Java introduced enums to replace int constants.
+
+//Java reflection
+- A feature in java that allows us to inspect and modify classes, methods, etc.
+-
+
+//exception*
+-an exception is an unexpected event that occurs during program execution.
+-Reasons an exception can occur: invalid user input, device failure, loss of network connection, out of disk memory, code errors.
+/*RuntimeException
+*IllegalArgumentException- improper use of an api.
+*NullPointerException-  Null pointer access.
+*ArrayIndexOutOfBoundsException- out-of-bounds array access.
+*/ArithmeticException - Dividing a number by 0.
+
+/*IOException
+*FileNotFoundException- Trying to open a file that does not exist.
+
+//Annotations
+-Compiler instructions- can be used for giving instructions to compiler.
+-compile-time instructions provided by these annotations help the software build tools to generate code, xml files and many more.
+-runtime instructions- Some annotations can be defined to give instructions tot eh program at runtime.
+
+// assertions- Assertions detect bugs by testing code assumed to be true.
+-Syntax: assert condition;
+
+///COLLECTIONS
+- Queue- This interface is used when elements need to be stored in a first in first out manner.
+-List- An ordered collection interface that lets you add and remove elements like an array
+-set- An interface that allows you to store elements in different sets and cannot have duplicates.
+-Queue<String> animal1 = new LinkedList<>();
+
+//vector- Implementation of List interface that allows us to create resizable-arrays similar to the ArrayList class.
+-Vector<Type> vector = new Vector<>();
+
+//Stack implementation- Elements are arranged and accessed in "Last in first out" manner.
+-Stack<Type> stacks = new Stack<>();
+-stack extends Vector class.
+-push()- method for adding an element to the top of stack.
+-EX: Pancakes, last one in first one out.
+
+//Hash Maps- There are keys and values in hash maps
+-HashMap<Key, Value> numbers = new HashMap<>(8, 0.6f);
+
+//Java Set- Uses collection interface, cannot contain duplicate elements.
+-Set<String> animals = new HashSet<>()
+-Collection is a super interface of Set.
+-HashSet<Integer> numbers1 = HashSet<>();- used if elements must be accessed randomly.
+
+// LinkedHashSet- Class in the java collections framework provides functions of both hashtable and the linked list data structure.
+-LinkedHashSet<Integer> numbers = new LinkedHashSet<>(8, 0.75);
+///*
+
+//Java I/O Streams*- Streams are the sequence of data that are read from the source and written to the destination.
+-Input stream- used to read the data from the source.
+-output stream used to write the data to the destination.
+-Byte Stream- used to write a single byte of data.
+-Character Stream- used to read and write a single character of data.
+-java.io.InputStream
+-InputStream object1 = new FileInputStream();
+-write()Method- writes the single byte to the file output stream.
+-ByteArrayInputStream- Can be used to read an array of input data.
+ByteArrayInputStream input = new ByteArrayInputStream(byte[] arr);
+-ByteArrayOutputStream- used to write data to an array of bytes.
+ByteArrayOutputStream out = new ByteArrayOutputStream(int size);
+PrintStream- extends OutputStream class
+
+//Reader/Writer*
+-Java Reader- Reader input = new FileReader();
+- Readers belong to the FileReader class
+-cannot have Reader object since it is an abstract class.
+-EX: Reader input = new fileReader("input.txt");
+Writer output = new FileWriter();
+
+
+
+
+
+
+
+
+
+
